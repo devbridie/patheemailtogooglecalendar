@@ -2,6 +2,8 @@
 
 Checks a gmail account for [Pathe](https://pathe.nl) film reservation emails and adds them to a Google Calendar account.
 
+![Example Google Calendar entry](https://raw.githubusercontent.com/devbridie/patheemailtogooglecalendar/master/example.png)
+
 #### Usage
 
 1. [Enable the Gmail API here](https://developers.google.com/gmail/api/quickstart/java).
