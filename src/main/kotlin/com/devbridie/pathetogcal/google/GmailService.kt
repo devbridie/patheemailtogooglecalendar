@@ -10,7 +10,7 @@ import com.google.api.services.gmail.model.Thread
 class GmailService() : EmailService {
     private fun Gmail.findPatheReservationThreads(): List<Thread> {
         return this.users().Threads().list("me")
-            .setQ("{subject: ticketbevestiging subject:reservering} from:pathe")
+            .setQ("in:inbox {subject: ticketbevestiging subject:reservering} from:pathe")
             .execute().threads
     }
     override fun findPatheEmails(): List<PatheEmail> {
