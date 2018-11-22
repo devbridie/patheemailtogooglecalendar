@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     java
     kotlin("jvm") version "1.3.0"
+    application
 }
 
 group = "com.devbridie"
@@ -29,4 +30,8 @@ configure<JavaPluginConvention> {
 }
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+application {
+    mainClassName = "com.devbridie.pathetogcal.MainKt"
 }
